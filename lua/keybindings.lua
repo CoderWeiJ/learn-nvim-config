@@ -4,7 +4,10 @@ vim.g.maplocalleader = " "
 -- 保存本地变量
 local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
-local opt = {noremap = true, silent = true }
+local opt = {
+    noremap = true,
+    silent = true
+}
 
 -- ====================分屏等快捷键====================
 
@@ -72,3 +75,10 @@ map("n", "Q", ":qa!<CR>", opt)
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
+-- ##################### nvim-tree #####################
+-- 插件快捷键
+local pluginKeys = {}
+
+
+-- alt + m 键打开关闭tree
+map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)

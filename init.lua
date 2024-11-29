@@ -2,3 +2,11 @@
 require('basic')
 -- 快捷键映射
 require('keybindings')
+-- 插件 lazy.nvim package manager
+require('config.lazy')
+-- 主题
+require('colorscheme')
+
+-- =====插件配置=====
+require('plugins.nvim-tree')
+-- =====插件配置=====
