@@ -9,4 +9,6 @@ require('colorscheme')
 
 -- =====插件配置=====
 require('plugins.nvim-tree')
+require('plugins.bufferline')
+require('plugins.lualine')
 -- =====插件配置=====
